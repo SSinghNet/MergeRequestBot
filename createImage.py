@@ -8,11 +8,11 @@ def createImage(messageText):
     draw = ImageDraw.Draw(img)
 
     width, height = img.size 
-    font = ImageFont.truetype("POE Sans Pro Light.ttf", 50)
+    font = ImageFont.truetype("POE Sans Pro Light.ttf", 75)
 
     textwidth, textheight = draw.textsize(messageText, font=font)
     x = width/2 - textwidth/2
-    y = height/8 - textheight/8
+    y = height/9 - textheight/9
     
     draw.text((x, y), messageText, (0,0,0),font=font)
 
