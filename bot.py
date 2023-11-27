@@ -3,7 +3,6 @@ import os
 import discord
 from dotenv import load_dotenv
 import createImage
-import keepAlive
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -30,5 +29,4 @@ async def on_message(message):
             # await message.channel.send(message.content)
         # await message.channel.send('Hello!')
 
-keepAlive.keep_alive()
 client.run(TOKEN)
